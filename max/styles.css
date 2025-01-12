@@ -1,0 +1,67 @@
+.header {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+    position: fixed;
+    width: 98%;
+}
+
+
+/*here we use image to make the logo*/
+
+.header .logo {
+    border: 2px solid black;
+    width: 25%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header nav {
+    width: 40%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+
+/*Here we will begin to style css for main*/
+
+main {
+    border: 2px solid black;
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main :is(h1, p, a) {
+    border: 2px solid black;
+}
+
+main div {
+    margin-top: 150px;
+    border: 2px solid black;
+}
+
+main a {
+    font-size: 1.5rem;
+    border: 2px solid black;
+    height: 45px;
+    line-height: 45px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 22px;
+}
