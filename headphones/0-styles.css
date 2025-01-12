@@ -1,0 +1,105 @@
+/* Define the global variable */
+
+:root {
+    --br: 2px solid transparent;
+}
+
+.header {
+    border: var(--br);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+    position: fixed;
+    width: 98%;
+}
+
+
+/* Here we use an image to make the logo */
+
+.header .logo {
+    border: var(--br);
+    width: 25%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header nav {
+    width: 40%;
+    border: var(--br);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    border: var(--br);
+    width: 200px;
+}
+
+
+/* Here we will begin to style CSS for main */
+
+main {
+    border: var(--br);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/images/headphones_hero_1.jpg);
+    background-origin: content-box;
+    background-position: center center;
+    background-size: cover;
+}
+
+main :is(h1, p, a) {
+    border: var(--br);
+    color: white;
+    text-align: center;
+}
+
+main div {
+    margin-top: 200px;
+    border: var(--br);
+    margin-bottom: 10px;
+}
+
+main a {
+    font-size: 1.5rem;
+    border: var(--br);
+    height: 45px;
+    line-height: 45px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 22px;
+    background-color: #ff6565;
+    position: relative;
+    top: -30px;
+}
+
+main a:hover {
+    opacity: 0.9;
+}
+
+#last-p {
+    width: 50%;
+    border: var(--br);
+    position: relative;
+    top: -50px;
+    font-size: 16px;
+}
+
+#p-first {
+    margin-top: -23px;
+    font-family: "Roboto";
+}
